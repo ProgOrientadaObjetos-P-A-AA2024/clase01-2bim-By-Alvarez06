@@ -11,7 +11,7 @@ public class EstudianteDistancia extends Estudiante{
     private double costoAsginatura;
     private double matriculaDistancia;
     
-    // 2.  Método establecerNumeroAsginaturas(numero: Real)
+    // 2.  Método establecerNumeroAsginaturas(numero: Entero)
     public void establecerNumeroAsginaturas(int numero){
         numeroAsignaturas = numero;
     }

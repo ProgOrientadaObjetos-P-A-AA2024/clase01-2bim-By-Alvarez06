@@ -44,7 +44,16 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        return nombresEstudiante;
+        String cadena = String.format("%s - Costo Matricula: %.2f", 
+                nombresEstudiante, matriculaPresencial);
+        
+        /*
+        Cuando tenemos una subclase, nosotros podemos llamar a los atributos los
+        cuales ha heredado ya sea mediante el nombre del atributo (en el caso
+        del toString llamamos directamente a nombresEstudiante de la superclase)
+        o con sus metodos obtener
+        */
+        return cadena;
     }
     
 }
