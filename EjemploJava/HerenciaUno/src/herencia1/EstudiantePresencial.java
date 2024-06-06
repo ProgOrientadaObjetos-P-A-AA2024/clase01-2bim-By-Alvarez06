@@ -44,8 +44,10 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        String cadena = String.format("%s - Costo Matricula: %.2f", 
-                nombresEstudiante, matriculaPresencial);
+        String reporte = String.format("Nombres: %s\nApellidos: %s\n"
+                + "Identificacion: %s\nEdad: %d\nCosto Matricula Distancia: %.2f",
+                obtenerNombresEstudiante(), apellidosEstudiante, 
+                identificacionEstudiante, edadEstudiante, matriculaPresencial);
         
         /*
         Cuando tenemos una subclase, nosotros podemos llamar a los atributos los
@@ -53,7 +55,7 @@ public class EstudiantePresencial extends Estudiante{
         del toString llamamos directamente a nombresEstudiante de la superclase)
         o con sus metodos obtener
         */
-        return cadena;
+        return reporte;
     }
     
 }
